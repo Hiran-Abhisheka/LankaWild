@@ -57,6 +57,7 @@ Built with a focus on **animations, performance, and UI/UX**, this project demon
 ---
 
 ## 📂 Project Structure
+
 LankaWild/
 ├── public/
 │   ├── index.html
