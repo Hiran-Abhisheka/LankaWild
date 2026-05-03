@@ -22,7 +22,6 @@
 <br/>
 
 🚀 Live Demo: https://lanka-wild.vercel.app/  
-📂 Repository: https://github.com/Hiran-Abhisheka/LankaWild  
 
 </div>
 
@@ -91,25 +90,3 @@ npm run dev
 
 ---
 
-## 🔥 Important tip (don’t skip)
-- Replace preview image with a **GIF** for real “animated preview”  
-  → Use tools like:
-  - ScreenToGif  
-  - OBS  
-  - Kap  
-
----
-
-## ⚡ Result
-- Looks like **top GitHub repos**
-- Strong for **internships + recruiters**
-- Visually engaging (first 3 seconds matter)
-
----
-
-If you want, I can:
-- 🎬 :contentReference[oaicite:0]{index=0}
-- 🎨 :contentReference[oaicite:1]{index=1}
-- 📈 :contentReference[oaicite:2]{index=2}
-
-Just tell me 👍
