@@ -58,21 +58,25 @@ Built with a focus on **animations, performance, and UI/UX**, this project demon
 
 ## 📂 Project Structure
 
+```
 LankaWild/
-|-- public/
-|   |-- index.html
-|   `-- favicon.ico
-|
-|-- src/
-|   |-- assets/
-|   |-- components/
-|   |-- pages/
-|   |-- styles/
-|   |-- App.jsx
-|   `-- main.jsx
-|
-|-- package.json
-`-- README.md
+├── public/
+│   ├── index.html
+│   └── favicon.ico
+│
+├── src/
+│   ├── assets/          # Images, videos, icons
+│   ├── components/      # Reusable UI components
+│   ├── pages/           # Main sections/pages
+│   ├── styles/          # CSS / styling files
+│   │
+│   ├── App.jsx          # Root component
+│   └── main.jsx         # Entry point
+│
+├── package.json
+├── package-lock.json
+└── README.md
+```
 
 ---
 
