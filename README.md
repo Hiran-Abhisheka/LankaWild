@@ -79,14 +79,40 @@ LankaWild/
 
 ---
 
-## ⚙️ Setup
+## ⚙️ Setup & Installation
 
+Make sure you have Node.js (v16+)
+
+### Clone the repository
 ```bash
 git clone https://github.com/Hiran-Abhisheka/LankaWild.git
+```
+
+### Enter project folder
+```bash
 cd LankaWild
+```
+
+### Install dependencies
+```bash
 npm install
+```
+
+### Run development server
+```bash
 npm run dev
 ```
 
 ---
 
+## 🚀 Build for Production
+```bash
+npm run build
+```
+
+---
+
+## 🌐 Preview Production Build
+```bash
+npm run preview
+```
