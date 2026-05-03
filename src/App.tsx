@@ -125,7 +125,7 @@ const Navbar = () => {
           className="flex items-center gap-2 cursor-pointer"
         >
           <div className="w-8 h-8 bg-brand-accent rounded-full flex items-center justify-center text-brand-bg font-black text-xs">LW</div>
-          <span className="text-brand-text font-display text-2xl font-black tracking-tighter uppercase">LankaWild</span>
+          <span className="text-brand-text font-display text-xl md:text-2xl font-black tracking-tighter uppercase">LankaWild</span>
         </motion.div>
 
         <motion.div 
@@ -148,7 +148,7 @@ const Navbar = () => {
                 visible: { opacity: 1, y: 0 }
               }}
               href={`#${item.toLowerCase()}`} 
-              className="text-brand-text/60 hover:text-brand-accent transition-colors text-[10px] uppercase tracking-[0.2em] font-bold"
+              className="text-brand-text/80 hover:text-brand-accent transition-colors text-[10px] uppercase tracking-[0.2em] font-bold"
             >
               {item}
             </motion.a>
@@ -160,7 +160,7 @@ const Navbar = () => {
             }}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="border border-brand-accent text-brand-accent px-6 py-2 rounded-full text-[10px] font-black uppercase tracking-widest hover:bg-brand-accent hover:text-brand-bg transition-all"
+            className="bg-brand-accent text-brand-bg px-6 py-2 rounded-full text-[10px] font-black uppercase tracking-widest hover:bg-brand-text hover:text-brand-bg transition-all shadow-lg"
           >
             Book Now
           </motion.button>
@@ -242,7 +242,7 @@ const Hero = () => {
   const opacityGradient = useTransform(scrollYProgress, [0, 0.8], [1, 0.6]);
 
   return (
-    <section ref={containerRef} className="relative h-screen w-full flex items-center justify-center overflow-hidden bg-brand-bg font-sans">
+    <section ref={containerRef} className="relative h-screen w-full flex items-start md:items-center justify-center overflow-hidden bg-brand-bg font-sans">
       <motion.div 
         style={{ y: backgroundY }}
         className="absolute -inset-y-20 inset-x-0 z-0"
@@ -276,19 +276,19 @@ const Hero = () => {
         />
       </motion.div>
 
-      <div className="container relative z-10 mx-auto px-6">
+      <div className="container relative z-10 mx-auto px-6 pt-28 md:pt-8 flex flex-col items-center md:items-start text-center md:text-left">
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: false }}
             transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
-            className="max-w-4xl"
+            className="max-w-4xl w-full"
           >
           <motion.span 
             initial={{ opacity: 0, x: -10 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.4 }}
-            className="text-brand-accent font-serif italic text-xl mb-[-10px] ml-1 block"
+            className="text-brand-accent font-serif italic text-lg md:text-xl mb-4 md:mb-6 ml-1 block"
           >
             Experience the Untamed
           </motion.span>
@@ -296,7 +296,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.8 }}
-            className="text-brand-text text-[60px] sm:text-[80px] md:text-[120px] lg:text-[180px] font-serif font-black leading-[0.8] uppercase tracking-tighter mb-8 select-none"
+            className="text-brand-text text-[50px] sm:text-[80px] md:text-[120px] lg:text-[180px] font-serif font-black leading-[0.85] md:leading-[0.8] uppercase tracking-tighter mb-6 md:mb-8 select-none"
           >
             WILD<br />
             <span className="text-transparent text-stroke">LANKA</span>
@@ -305,7 +305,7 @@ const Hero = () => {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ delay: 0.6, duration: 1 }}
-            className="text-brand-text/60 max-w-xl text-lg md:text-xl font-medium leading-relaxed mb-10 border-l border-brand-accent/30 pl-6"
+            className="text-brand-text/60 max-w-xl mx-auto md:mx-0 text-base md:text-xl font-medium leading-relaxed mb-8 md:mb-10 border-l-0 md:border-l border-brand-accent/30 md:pl-6"
           >
             Journey into the heart of Sri Lanka's pristine national parks. 
             Witness leopards, elephants, and rare wildlife in their natural habitat.
@@ -314,16 +314,16 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.8 }}
-            className="flex flex-col sm:flex-row items-center gap-6"
+            className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-6 sm:gap-8"
           >
-            <button className="bg-brand-accent text-brand-bg px-10 py-4 rounded-lg font-black uppercase tracking-widest hover:bg-brand-text transition-all w-full sm:w-auto shadow-2xl">
+            <button className="bg-brand-accent text-brand-bg px-8 py-3 md:px-10 md:py-4 rounded-lg font-black uppercase tracking-widest hover:bg-brand-text transition-all w-auto shadow-2xl active:scale-95 text-xs md:text-sm">
               Start Your Expedition
             </button>
-            <div className="flex items-center gap-4 group cursor-pointer">
-               <div className="w-12 h-12 rounded-full border border-brand-text/20 flex items-center justify-center group-hover:border-brand-accent transition-colors">
+            <div className="flex items-center gap-4 group cursor-pointer group">
+               <div className="w-12 h-12 rounded-full border border-brand-text/20 flex items-center justify-center group-hover:border-brand-accent group-hover:bg-brand-accent/10 transition-all">
                   <ArrowRight className="text-brand-text group-hover:text-brand-accent transition-colors" size={20} />
                </div>
-               <span className="text-xs uppercase font-black tracking-widest">Our Fleet</span>
+               <span className="text-[10px] md:text-xs uppercase font-black tracking-widest text-brand-text/60 group-hover:text-brand-accent transition-colors">Our Fleet</span>
             </div>
           </motion.div>
         </motion.div>
@@ -705,7 +705,7 @@ const Footer = () => {
                      href={soc.link} 
                      target="_blank" 
                      rel="noreferrer"
-                     className="w-10 h-10 rounded-full border border-brand-border flex items-center justify-center hover:border-brand-accent transition-colors cursor-pointer text-brand-text/40 hover:text-brand-accent shadow-lg"
+                     className="w-10 h-10 rounded-full border border-brand-border flex items-center justify-center hover:border-brand-accent transition-colors cursor-pointer text-brand-text/70 hover:text-brand-accent shadow-lg"
                    >
                        <soc.icon size={18} />
                    </a>
@@ -813,7 +813,7 @@ export default function App() {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 2 }}
-            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[480px] font-black font-serif italic whitespace-nowrap text-brand-text"
+            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[150px] sm:text-[300px] md:text-[480px] font-black font-serif italic whitespace-nowrap text-brand-text"
           >
               EXPEDITION
           </motion.div>
