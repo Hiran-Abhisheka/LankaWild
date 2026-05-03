@@ -58,6 +58,7 @@ Built with a focus on **animations, performance, and UI/UX**, this project demon
 
 ## 📂 Project Structure
 
+id="
 LankaWild/
 ├── public/
 │   ├── index.html
@@ -74,7 +75,7 @@ LankaWild/
 │
 ├── package.json
 ├── package-lock.json
-└── README.md
+└── README.md"
 
 ---
 
